@@ -1,0 +1,39 @@
+.post{ :id => "post_#{post.id}"}
+  .meta
+    .face
+      - if current_user
+        = link_to card_image_tag(post.author, :style => "small"), profile_path(post.author.slug)
+      - else
+        = image_tag "/images/profile-images/placeholder-disabled-medium.png", :width => "114px", :height => "114px"
+    .name
+      - if current_user
+        = link_to post.author.name, profile_path(post.author.slug)
+      - else
+        = post.author.name
+    - if post.created_at > 1.day.ago
+      .time
+        #{time_ago_in_words post.created_at} ago.
+    - else
+      .date
+        = post.created_at.strftime("%B %d, %Y")
+    
+    .controls
+      - if not post.deleted?
+        = link_to "quote", "#quote-#{post.id}",  :class => "button orange quote"
+    - if post.editable?(current_user)
+      .admin-controls
+        - if !post.deleted?
+          = link_to "delete", "#delete-#{post.id}", :class => "button red delete"
+          = link_to "edit", "#edit-#{post.id}", :class => "button orange edit"
+        - if post.deleted? 
+          = link_to "undelete", "#undelete-#{post.id}", :class => "button red undelete"
+
+  .content{ :class => post.deleted? && "deleted" }
+    - if post.deleted? && !post.editable?(current_user)
+      [ Deleted Post. ]
+    - else
+      = post.rendered_text
+      .post-meta
+        - if post.edited_at
+          (Edited #{time_ago_in_words post.edited_at} ago.)
+      

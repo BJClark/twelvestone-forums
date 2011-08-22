@@ -1,0 +1,20 @@
+= render :partial => "/layouts/side_navigation", :locals => { :profile => current_user }
+
+.column.wide-content
+  %h2 Hey Foxy Forums
+  
+  
+  %table.lined
+    %thead
+      %tr
+        %th
+          Forum
+        %th
+          Description
+        %th
+          Last Post
+    %tbody
+      = render :partial => "/community/forums/row", :collection => @forums
+          
+        
+        

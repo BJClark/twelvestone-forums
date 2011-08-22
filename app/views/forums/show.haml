@@ -1,0 +1,34 @@
+= render :partial => "/layouts/side_navigation", :locals => { :profile => current_user }
+
+#wide_center_column
+  %h2.forum-title
+    = link_to "Forums Home &raquo;", community_forums_path
+    = @forum.name
+  - if @forum.allowed? current_user
+    = link_to "Start a new conversation", new_community_conversation_path(:forum_id => @forum.id), :id => "new_conversation"
+
+
+    %table.lined.conversations
+      %thead
+        %tr
+          %th
+            Title
+          %th
+            Author
+          %th
+            Last Post by
+
+      %tbody
+        = render :partial => "community/conversations/row", :collection => @sticky
+        = render :partial => "community/conversations/row", :collection => @conversations
+
+    = will_paginate @conversations
+  - else
+    .column.two-thirds
+      Sorry, this forum is restricted
+      - if @forum.restricted == "staff"
+        to staff.
+      - else
+        to premium members.
+        
+      = link_to "Please check out the other forums.", community_forums_path

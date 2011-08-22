@@ -1,0 +1,9 @@
+- form_for @conversation do |f|
+  = f.text_field :title
+  = f.label :open, "Open"
+  = f.check_box :open, :checked => @conversation.open?
+  = f.label :sticky
+  = f.check_box :sticky, :checked => @conversation.sticky?
+  = f.submit "save", :class => "submit"
+  
+  

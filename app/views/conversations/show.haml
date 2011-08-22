@@ -1,0 +1,108 @@
+= render :partial => "/layouts/side_navigation", :locals => { :profile => @profile }
+
+#wide_center_column
+  %h2.forum-title
+    = link_to "#{@conversation.forum.name} &raquo;", community_forum_path(@conversation.forum)
+    = @conversation.title
+  - paginated_section @posts do
+    
+    .conversation
+      = render :partial => "/community/posts/post", :collection => @posts
+      #conversation_append
+      
+        
+  - if @page.to_i == @conversation.total_pages_from_post_count || @conversation.post_count <= Community::Post.per_page
+    #new_post{ :data => { "last-post-id"    => @conversation.last_post.original_id, 
+                          "conversation-id" => @conversation.id } }
+                          
+        
+      - if current_user
+        .column.new-post
+          - form_for @new_post, :html => { :id => "new_post_form" } do |f|
+
+            = f.hidden_field :conversation_id, :value => @conversation.id
+
+            .labelled-input
+              = f.label :text, "Add to the discussion"
+              = f.text_area :text
+
+            .submit
+              = f.submit "Post", :class => "submit"
+              
+        .column.formatting
+
+          %h3 Formatting Instructions
+
+          %p
+            We use 
+            = link_to "markdown", "http://daringfireball.net/projects/markdown/syntax", :target => "_blank"
+            for formatting posts. Here are some examples:
+
+          %table.lined
+            %tbody
+              %tr
+                %td.definition
+                  <strong>bold</strong>
+                %td
+                  **bold**
+
+              %tr
+                %td.definition
+                  <em>italics</em>
+                %td
+                  *italics*
+
+              %tr
+                %td.definition
+                  <a href="http://www.heyfoxy.com">links</a>
+                %td
+                  [links](http://www.heyfoxy.com)
+
+              %tr
+                %td.definition
+                  %ul
+                    %li a
+                    %li b
+                %td
+                  + a<br>
+                  + b
+
+              %tr
+                %td.definition
+                  %ol
+                    %li a
+                    %li b
+                %td
+                  1. a<br>
+                  2. b
+
+              %tr
+                %td.definition
+                  %blockquote
+                    Quote
+                %td
+                  &gt; Quote
+
+              -# %tr
+              -#   %td.definition
+              -#     = image_tag "/favicon.jpeg"
+              -#   %td
+              -#     ![alt](http://hf.)
+                
+      - else
+        
+        .instructions
+          Sorry, you must be a member to post to a conversation. Either 
+          log in or 
+          = link_to "sign up", home_path
+          to get involved.
+
+      
+
+
+
+
+
+            
+        
+                

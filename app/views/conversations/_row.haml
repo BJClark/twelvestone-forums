@@ -1,0 +1,19 @@
+- css = "#{row.sticky? and 'sticky'} #{!row.open? and 'closed'}"
+%tr{ :class => css }
+  %td.title{ :class => current_user && current_user.admin? && "editable", :data => { :id => row.slug } }
+    .conversation-links
+      = link_to row.title, row
+      = conversation_links row
+    
+  %td
+    = current_user && row.first_post.author.name or "Member"
+  %td
+    #{current_user && row.last_post.author.name or "Member"}
+    %br
+    - if row.last_posted_in > 1.day.ago
+      %em
+        = time_ago_in_words row.last_posted_in
+        ago
+    - else
+      = row.last_posted_in.strftime("%Y-%m-%d")
+    

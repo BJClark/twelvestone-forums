@@ -1,0 +1,14 @@
+%tr
+  %td{ :class => !row.allowed?(current_user) && "restricted" }
+    = link_to row.name, row
+  %td
+    = row.description
+  %td
+    - if row.try(:last_conversation)
+      Last post by 
+      - author = row.last_conversation.last_post.author
+      = link_to truncate(author.name), profile_path(author.slug), 
+           :title => "#{author.gender}/#{author.location.name},#{author.location.state}"
+      in 
+      = link_to truncate(row.last_conversation.title), community_conversation_path(row.last_conversation.slug)
+      
