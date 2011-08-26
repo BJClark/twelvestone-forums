@@ -1,0 +1,547 @@
+/* **************** BLOCK SKINS ***************** */
+/* ====== Contour blocks ====== */
+/* remove background-image:" to default to square corners for IE */
+/* ----- simple (extends mod) ----- */
+/* line 7, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.simple .inner {
+  border: 1px solid #d7d7d7;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+/* line 12, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.simple b {
+  *background-image: url(skin/simple_corners.png);
+}
+
+/* ----- basic (extends mod) ----- */
+/* line 18, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.basic .inner {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+/* line 22, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.basic b {
+  *background-image: url(skin/round.png);
+}
+
+/* ----- simpleExt (extends mod) ----- */
+/* line 27, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.simpleExt {
+  border: 1px solid #c7c7c7;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+/* line 32, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.simpleExt .inner {
+  border: 1px solid #c7c7c7;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  border-color: white;
+  border-width: 4px;
+  background-color: #e2e2e2;
+}
+/* line 40, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.simpleExt b {
+  *background-image: url(skin/simple_extended.png);
+}
+/* line 42, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.simpleExt .tl {
+  left: -1px;
+  top: -1px;
+  height: 12px;
+  width: 12px;
+}
+/* line 47, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.simpleExt .tr {
+  right: -1px;
+  top: -1px;
+  height: 12px;
+  width: 12px;
+}
+/* line 52, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.simpleExt .bl {
+  left: -1px;
+  bottom: -1px;
+  height: 12px;
+  width: 12px;
+  margin-top: -12px;
+}
+/* line 58, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.simpleExt .br {
+  right: -1px;
+  bottom: -1px;
+  height: 12px;
+  width: 12px;
+  margin-top: -12px;
+}
+
+/* ----- me (extends mod) use for my comments ----- */
+/* line 67, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.me {
+  border: 1px solid #909090;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 72, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.me .inner {
+  border: 1px solid #909090;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border-color: #d76a84;
+}
+/* line 78, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.me b {
+  *background-image: url(skin/me.png);
+}
+/* line 80, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.me .tl {
+  left: -1px;
+  top: -1px;
+}
+/* line 83, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.me .tr {
+  right: -1px;
+  top: -1px;
+}
+/* line 86, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.me .bl {
+  left: -1px;
+  bottom: -1px;
+}
+/* line 89, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.me .br {
+  right: -1px;
+  bottom: -1px;
+}
+
+/* ----- noted (extends mod) ----- */
+/* line 95, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.noted {
+  border: 1px solid #c2c2c2;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 100, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.noted .inner {
+  border: 1px solid #c2c2c2;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border-color: #eded68;
+}
+/* line 106, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.noted b {
+  *background-image: url(skin/noted.png);
+}
+/* line 108, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.noted .tl {
+  left: -1px;
+  top: -1px;
+}
+/* line 111, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.noted .tr {
+  right: -1px;
+  top: -1px;
+}
+/* line 114, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.noted .bl {
+  left: -1px;
+  bottom: -1px;
+}
+/* line 117, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.noted .br {
+  right: -1px;
+  bottom: -1px;
+}
+
+/* ----- grab (extends mod) ----- */
+/* line 124, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.grab .inner {
+  border: 3px solid #00477a;
+  border-bottom-width: 10px;
+}
+/* line 127, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.grab b {
+  background-image: url(skin/grab.png);
+}
+/* line 129, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.grab .bl, .grab .br {
+  height: 16px;
+  /*if height is set, margin set */
+  margin-top: -16px;
+}
+
+/* can't be done w border radius */
+/*.grab .tl, .grab .tr{height:10px; width:10px;} */
+/* ----- faq (extends mod) ----- */
+/* line 141, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.faq .inner {
+  border: 3px solid #b20029;
+  border-bottom-width: 10px;
+}
+/* line 144, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.faq b {
+  background-image: url(skin/faq.png);
+}
+/* line 146, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.faq .bl, .faq .br {
+  height: 16px;
+  /*if height is set, margin set */
+  margin-top: -16px;
+}
+
+/* can't be done w border radius */
+/* ----- onlinestore (extends mod) ----- */
+/* line 156, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.onlinestore .inner {
+  border: 3px solid #9a9800;
+  border-bottom-width: 10px;
+}
+/* line 159, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.onlinestore b {
+  background-image: url(skin/store.png);
+}
+/* line 161, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.onlinestore .bl, .onlinestore .br {
+  height: 16px;
+  /*if height is set, margin set */
+  margin-top: -16px;
+}
+
+/* can't be done w border radius */
+/* ----- about (extends mod) ----- */
+/* line 171, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.about .inner {
+  border: 3px solid #494949;
+  border-bottom-width: 10px;
+}
+/* line 174, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.about b {
+  background-image: url(skin/about.png);
+}
+/* line 176, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.about .bl, .about .br {
+  height: 16px;
+  /*if height is set, margin set */
+  margin-top: -16px;
+}
+
+/* can't be done w border radius */
+/* ----- talk (extends mod) ----- */
+/* line 185, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.talk {
+  border: 1px solid #c7c7c7;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 190, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.talk .inner {
+  border: 1px solid #c7c7c7;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border-color: #ededed;
+}
+/* line 196, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.talk b {
+  *background-image: url(skin/talk.png);
+}
+/* line 198, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.talk .tl {
+  left: -1px;
+  top: -1px;
+}
+/* line 201, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.talk .tr {
+  right: -1px;
+  top: -1px;
+}
+/* line 204, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.talk .bl {
+  left: -1px;
+  bottom: -1px;
+}
+/* line 207, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.talk .br {
+  right: -1px;
+  bottom: -1px;
+}
+
+/* ----- photo (extends complex) ----- */
+/* line 214, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.photo .inner {
+  border: solid 10px white;
+  margin: 0 4px;
+}
+/* line 217, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.photo b {
+  background-image: url(skin/photo.png);
+}
+/* line 219, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.photo .tr, .photo .tl {
+  width: 20px;
+}
+/* line 221, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.photo .top, .photo .bottom {
+  height: 4px;
+  margin-top: 0px;
+}
+/* line 224, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.photo .bl, .photo .br {
+  height: 16px;
+  margin-top: -12px;
+}
+
+/* muck with margins to change how the block will align with other blocks, any value between 0-10px */
+/* ----- flow (extends complex) ----- */
+/* line 232, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.flow {
+  margin: 6px;
+}
+/* line 234, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.flow b {
+  background-image: url(skin/even.png);
+}
+/* line 236, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.flow .inner {
+  padding: 0 4px;
+}
+/* line 238, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.flow .top {
+  height: 4px;
+}
+/* line 240, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.flow .bottom {
+  height: 4px;
+  margin-top: -4px;
+}
+/* line 243, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.flow .br, .flow .bl {
+  margin-top: -6px;
+}
+
+/* margin top = bottom height - corner height */
+/* ----- shadow test (experimental attempt to match "flow" cross browser w no img)----- */
+/* line 249, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.boo {
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: black 2px 2px 2px 2px;
+  /*-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px; */
+  border: solid 1px #949494;
+  background: white;
+}
+
+/* ----- .excerpt (extends complex) ----- */
+/* line 259, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.excerpt b {
+  background-image: url(skin/excerpt.png);
+}
+/* line 261, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.excerpt .top {
+  height: 1px;
+}
+/* line 263, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.excerpt .bottom {
+  height: 6px;
+  margin-top: -6px;
+}
+/* line 266, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.excerpt .br, .excerpt .bl {
+  height: 12px;
+  margin-top: -6px;
+}
+
+/* margin top equal to - height of bottom */
+/* margin top = bottom height - corner height */
+/* ----- sommers (extends pop) ----- */
+/* line 274, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.sommers {
+  background-image: url(skin/glow_7px.png);
+  _background-image: none;
+  margin: 3px 20px 20px 3px;
+}
+/* line 275, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.sommers .inner {
+  _border: 3px solid #d7d7d7;
+  background-image: url(skin/glow_7px.png);
+  _background-image: none;
+}
+/* line 281, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.sommers b {
+  background-image: url(skin/glow_7px.png);
+  _background-image: none;
+}
+
+/*IE6 backup no alpha transparency */
+/* ----- gonzalo ----- */
+/* line 290, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.gonzalo {
+  background-image: url(skin/gc.png);
+}
+/* line 292, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.gonzalo .inner, .gonzalo b {
+  background-image: url(skin/gc.png);
+}
+
+/* ====== Background blocks ====== */
+/* line 297, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.sale .inner {
+  background: red none;
+}
+
+/* line 301, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.nicole .inner {
+  background: #c01c41 none;
+  color: white;
+}
+/* line 304, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.nicole * {
+  color: white;
+}
+
+/* line 307, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.login * {
+  color: white;
+}
+
+/* line 310, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.highlight .inner {
+  background: #e3e36f none;
+}
+
+/* line 313, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.universe .inner {
+  background: url(skin/universe.png) repeat left top;
+}
+
+/* line 316, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.foo .inner {
+  background: url(skin/universe_gray.png) repeat left top;
+}
+
+/* line 319, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.login .inner {
+  background: url(skin/universe_login.png) repeat left top;
+}
+
+/* line 322, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.comment .inner {
+  background: #e2e2e2 none;
+}
+
+/* ====== Block headers and footers ====== */
+/*.hd h1, .hd h2, .hd h3, .hd h4, .hd h5, .hd h6{padding: 5px 10px;} */
+/* line 328, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.section {
+  background: #e9e9e9 url(skin/header.png) repeat-x left bottom;
+  color: #de2c72;
+  font-size: 120%;
+  /*padding:5px 10px; */
+}
+/* line 333, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.section h1, .section h2, .section h3, .section h4, .section h5, .section h6 {
+  font-size: 100%;
+  color: #de2c72;
+  /*padding:0; */
+}
+
+/* line 338, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.act {
+  background-color: #e9e9e9;
+}
+
+/* line 341, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.topper {
+  background: white url(skin/header_gradient_light.png) repeat-x left bottom;
+  color: #4d4d4d;
+  font-size: 120%;
+  padding: 5px 10px;
+}
+/* line 346, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.topper h1, .topper h2, .topper h3, .topper h4, .topper h5, .topper h6 {
+  font-size: 100%;
+  color: #4d4d4d;
+  padding: 0;
+}
+
+/* line 351, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.tabPosLeft .topper li, .tabPosRight .topper li {
+  background: white url(skin/header_gradient_light.png) repeat-x left bottom;
+  /* belongs in topper */
+}
+
+/* line 355, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.tabPosBottom .topper {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 40%, from(#e2e2e2), to(white));
+  background-image: -moz-linear-gradient(0% 8% 270deg, #e2e2e2, white, white 77%);
+}
+
+/* line 359, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.bam {
+  background: #00477a url(skin/header_glossy.png) repeat-x left top;
+  color: white;
+  font-size: 120%;
+  padding: 5px 10px;
+}
+/* line 364, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.bam h1, .bam h2, .bam h3, .bam h4, .bam h5, .bam h6 {
+  font-size: 100%;
+  color: white;
+  padding: 0;
+}
+
+/* line 369, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.gonz {
+  background: url(skin/gc_header.png) no-repeat left top;
+}
+
+/* messed up */
+/* line 374, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.online {
+  background: #9a9400 url(skin/online.png) repeat-x left top;
+  color: black;
+  font-size: 120%;
+  padding: 5px 10px;
+}
+/* line 379, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.online h1, .online h2, .online h3, .online h4, .online h5, .online h6 {
+  font-size: 100%;
+  color: black;
+  padding: 0;
+}
+
+/* line 384, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.help {
+  background: #b20029 url(skin/help.png) repeat-x left top;
+  color: white;
+  font-size: 120%;
+  padding: 5px 10px;
+}
+/* line 389, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.help h1, .help h2, .help h3, .help h4, .help h5, .help h6 {
+  font-size: 100%;
+  color: white;
+  padding: 0;
+}
+
+/* line 394, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.info {
+  background: #636363 url(skin/info.png) repeat-x left top;
+  color: white;
+  font-size: 120%;
+  padding: 5px 10px;
+}
+/* line 399, ../../../../../app/stylesheets/oosass/core/module/mod_skins.sass */
+.info h1, .info h2, .info h3, .info h4, .info h5, .info h6 {
+  font-size: 100%;
+  color: white;
+  padding: 0;
+}

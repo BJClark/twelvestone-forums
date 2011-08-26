@@ -1,0 +1,55 @@
+/* grids debug */
+/* line 3, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.line {
+  background-color: #e2e2e2;
+}
+
+/* line 6, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.size1of1 {
+  background-color: pink;
+}
+
+/* line 9, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.size1of2 {
+  background-color: red;
+}
+
+/* line 12, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.size1of3 {
+  background-color: orange;
+}
+
+/* line 15, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.size2of3 {
+  background-color: yellow;
+}
+
+/* line 18, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.size1of4 {
+  background-color: lime;
+}
+
+/* line 21, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.size3of4 {
+  background-color: green;
+}
+
+/* line 24, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.size1of5 {
+  background-color: aqua;
+}
+
+/* line 27, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.size2of5 {
+  background-color: blue;
+}
+
+/* line 30, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.size3of5 {
+  background-color: purple;
+}
+
+/* line 33, ../../../../../app/stylesheets/oosass/core/grid/grids_debug.sass */
+.size4of5 {
+  background-color: magenta;
+}

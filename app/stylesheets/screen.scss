@@ -1,0 +1,21 @@
+@import url("oosass/all.css");
+
+textarea {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+}
+.vertical {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);     
+}

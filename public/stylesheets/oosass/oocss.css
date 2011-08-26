@@ -1,0 +1,453 @@
+/*Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+ *Code licensed under the BSD License:
+ *http://developer.yahoo.net/yui/license.txt
+ *version: 3.0.0pr2 */
+/* reset */
+/* line 8, ../../../app/stylesheets/oosass/core/libraries.sass */
+html {
+  color: black;
+  background: white;
+}
+
+/* line 12, ../../../app/stylesheets/oosass/core/libraries.sass */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, ../../../app/stylesheets/oosass/core/libraries.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 20, ../../../app/stylesheets/oosass/core/libraries.sass */
+fieldset, img {
+  border: 0;
+}
+
+/* line 23, ../../../app/stylesheets/oosass/core/libraries.sass */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 27, ../../../app/stylesheets/oosass/core/libraries.sass */
+li {
+  list-style: none;
+}
+
+/* line 30, ../../../app/stylesheets/oosass/core/libraries.sass */
+caption, th {
+  text-align: left;
+}
+
+/* line 33, ../../../app/stylesheets/oosass/core/libraries.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 38, ../../../app/stylesheets/oosass/core/libraries.sass */
+q:before, q:after {
+  content: "";
+}
+
+/* line 41, ../../../app/stylesheets/oosass/core/libraries.sass */
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* line 45, ../../../app/stylesheets/oosass/core/libraries.sass */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 48, ../../../app/stylesheets/oosass/core/libraries.sass */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 51, ../../../app/stylesheets/oosass/core/libraries.sass */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* line 56, ../../../app/stylesheets/oosass/core/libraries.sass */
+input, textarea, select {
+  *font-size: 100%;
+}
+
+/* line 59, ../../../app/stylesheets/oosass/core/libraries.sass */
+legend {
+  color: black;
+}
+
+/* line 1, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.line:after, .lastUnit:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+/* line 11, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.line {
+  *zoom: 1;
+}
+
+/* line 14, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.unit {
+  float: left;
+}
+
+/* line 17, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.unitExt {
+  float: right;
+}
+
+/* line 20, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size1of1 {
+  float: none;
+}
+
+/* line 23, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size1of2 {
+  width: 50%;
+}
+
+/* line 26, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size1of3 {
+  width: 33.333%;
+}
+
+/* line 29, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size2of3 {
+  width: 66.667%;
+}
+
+/* line 32, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size1of4 {
+  width: 25%;
+}
+
+/* line 35, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size3of4 {
+  width: 75%;
+}
+
+/* line 38, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size1of5 {
+  width: 20%;
+}
+
+/* line 41, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size2of5 {
+  width: 40%;
+}
+
+/* line 44, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size3of5 {
+  width: 60%;
+}
+
+/* line 47, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size4of5 {
+  width: 80%;
+}
+
+/* line 50, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size1of6 {
+  width: 16.667%;
+}
+
+/* line 53, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size5of6 {
+  width: 83.333%;
+}
+
+/* line 56, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size1of8 {
+  width: 12.5%;
+}
+
+/* line 59, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.size7of8 {
+  width: 87.5%;
+}
+
+/* line 62, ../../../app/stylesheets/oosass/core/grid/grids.sass */
+.lastUnit {
+  display: table-cell;
+  float: none;
+  width: auto;
+  *display: block;
+  *zoom: 1;
+  _position: relative;
+  _left: -3px;
+  _margin-right: -3px;
+}
+
+/* **************** TEMPLATE ***************** */
+/* ====== Page Head, Body, and Foot ====== */
+/* line 4, ../../../app/stylesheets/oosass/core/template/template.sass */
+body {
+  _text-align: center;
+}
+
+/* IE5.5 */
+/* line 9, ../../../app/stylesheets/oosass/core/template/template.sass */
+.main {
+  display: table-cell;
+  *display: block;
+  width: auto;
+}
+
+/* line 14, ../../../app/stylesheets/oosass/core/template/template.sass */
+.body, .main {
+  *zoom: 1;
+}
+
+/* line 17, ../../../app/stylesheets/oosass/core/template/template.sass */
+.body:after, .main:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+/* line 27, ../../../app/stylesheets/oosass/core/template/template.sass */
+.page {
+  margin: 0 auto;
+  width: 950px;
+  _text-align: left;
+}
+
+/* wraps other template elems to set width */
+/* text-align IE5.5 */
+/* "old school" and "liquid" extend page to allow for different page widths */
+/* line 37, ../../../app/stylesheets/oosass/core/template/template.sass */
+.oldSchool {
+  width: 750px;
+}
+
+/* line 40, ../../../app/stylesheets/oosass/core/template/template.sass */
+.gs960 {
+  width: 960px;
+}
+
+/* line 43, ../../../app/stylesheets/oosass/core/template/template.sass */
+.liquid {
+  width: auto;
+  margin: 0;
+}
+
+/* ====== Columns ====== */
+/* line 49, ../../../app/stylesheets/oosass/core/template/template.sass */
+.leftCol {
+  float: left;
+  width: 250px;
+  _margin-right: -3px;
+}
+
+/* line 54, ../../../app/stylesheets/oosass/core/template/template.sass */
+.rightCol {
+  float: right;
+  width: 300px;
+  _margin-left: -3px;
+}
+
+/* extend columns to allow for common column widths */
+/* line 61, ../../../app/stylesheets/oosass/core/template/template.sass */
+.gMail {
+  width: 160px;
+}
+
+/* line 64, ../../../app/stylesheets/oosass/core/template/template.sass */
+.gCal {
+  width: 180px;
+}
+
+/* line 67, ../../../app/stylesheets/oosass/core/template/template.sass */
+.yahoo {
+  width: 240px;
+}
+
+/* line 70, ../../../app/stylesheets/oosass/core/template/template.sass */
+.myYahoo {
+  width: 300px;
+}
+
+/*Copyright (c) 2009, Nicole Sullivan. All rights reserved.
+ *Code licensed under the BSD License:
+ *version: 0.2 */
+/* **************** BLOCK STRUCTURES ***************** */
+/* mod */
+/* line 8, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.mod {
+  margin: 10px;
+}
+/* line 10, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.mod .inner {
+  /*background: url(skin/transparent.png) repeat left top; */
+}
+
+/* line 13, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.bd, .ft, .hd {
+  display: inline-block;
+  width: 100%;
+  *display: block;
+  *width: auto;
+  zoom: 1;
+}
+
+/* line 20, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.inner:after, .hd:after, .bd:after, .ft:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+/* line 30, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.inner {
+  position: relative;
+}
+
+/* line 33, ../../../app/stylesheets/oosass/core/module/mod.sass */
+b {
+  display: block;
+  background-repeat: no-repeat;
+  font-size: 1%;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 40, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.tl, .tr, .bl, .br {
+  height: 10px;
+  width: 10px;
+  float: left;
+}
+
+/* line 45, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.tl {
+  background-position: left top;
+}
+
+/* line 48, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.tr {
+  background-position: right top;
+}
+
+/* line 51, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.bl {
+  background-position: left bottom;
+}
+
+/* line 54, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.br {
+  background-position: right bottom;
+  float: right;
+}
+
+/* line 58, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.tr {
+  float: right;
+  overflow: hidden;
+  margin-bottom: -32000px;
+}
+
+/* line 63, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.tl {
+  overflow: hidden;
+  margin-bottom: -32000px;
+}
+
+/* margin bottom needs to be < -9px */
+/* line 69, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.bl, .br {
+  margin-top: -10px;
+}
+
+/* line 72, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.top {
+  background-position: center top;
+}
+
+/* line 75, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.bottom {
+  background-position: center bottom;
+  _zoom: 1;
+}
+
+/* this zoom required for IE5.5 only */
+/* complex */
+/* line 82, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.complex {
+  overflow: hidden;
+  *position: relative;
+  *zoom: 1;
+}
+/* line 86, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.complex .tl, .complex .tr {
+  height: 32000px;
+  margin-bottom: -32000px;
+  width: 10px;
+}
+/* line 90, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.complex .bl, .complex .br {
+  /*margin-top:0; */
+}
+/* line 92, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.complex .top {
+  height: 5px;
+}
+/* line 94, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.complex .bottom {
+  height: 5px;
+  /*margin-top:-10px; */
+}
+
+/* position/zoom required for IE7, 6, 5.5 */
+/* pop */
+/* line 102, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.pop {
+  overflow: visible;
+  margin: 10px 20px 20px 10px;
+  background-position: left top;
+}
+/* line 106, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.pop .inner {
+  right: -10px;
+  bottom: -10px;
+  background-position: right bottom;
+  padding: 0 10px 10px 0;
+}
+/* line 111, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.pop .tl, .pop .br {
+  display: none;
+}
+/* line 113, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.pop .bl {
+  bottom: -10px;
+}
+/* line 115, ../../../app/stylesheets/oosass/core/module/mod.sass */
+.pop .tr {
+  right: -10px;
+}

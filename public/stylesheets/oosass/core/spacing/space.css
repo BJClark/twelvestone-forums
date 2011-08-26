@@ -1,0 +1,189 @@
+/*
+ * Spacing classes 
+ * Should be used to modify the default spacing between objects (not between nodes of the same object)
+ * Please use judiciously. You want to be using defaults most of the time, these are exceptions! 
+ * <type><location><size> */
+/* ====== Default spacing ====== */
+/* line 8, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote, .media {
+  margin: 10px;
+}
+
+/* line 11, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+h1, h2, h3, h4, h5, h6, img {
+  padding-bottom: 0px;
+}
+
+/* line 14, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+pre {
+  margin: 10px;
+}
+
+/* line 18, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, table ol, table dl {
+  padding: 0;
+}
+
+/* spacing helpers
+ *p,m = padding,margin
+ *a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+ *s,m,l,n = small(5px),medium(10px),large(20px),none(0px) */
+/* line 26, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.ptn, .pvn, .pan {
+  padding-top: 0px;
+}
+
+/* line 29, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.pts, .pvs, .pas {
+  padding-top: 5px;
+}
+
+/* line 32, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.ptm, .pvm, .pam {
+  padding-top: 10px;
+}
+
+/* line 35, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.ptl, .pvl, .pal {
+  padding-top: 20px;
+}
+
+/* line 38, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.prn, .phn, .pan {
+  padding-right: 0px;
+}
+
+/* line 41, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.prs, .phs, .pas {
+  padding-right: 5px;
+}
+
+/* line 44, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.prm, .phm, .pam {
+  padding-right: 10px;
+}
+
+/* line 47, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.prl, .phl, .pal {
+  padding-right: 20px;
+}
+
+/* line 50, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.pbn, .pvn, .pan {
+  padding-bottom: 0px;
+}
+
+/* line 53, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.pbs, .pvs, .pas {
+  padding-bottom: 5px;
+}
+
+/* line 56, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.pbm, .pvm, .pam {
+  padding-bottom: 10px;
+}
+
+/* line 59, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.pbl, .pvl, .pal {
+  padding-bottom: 20px;
+}
+
+/* line 62, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.pln, .phn, .pan {
+  padding-left: 0px;
+}
+
+/* line 65, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.pls, .phs, .pas {
+  padding-left: 5px;
+}
+
+/* line 68, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.plm, .phm, .pam {
+  padding-left: 10px;
+}
+
+/* line 71, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.pll, .phl, .pal {
+  padding-left: 20px;
+}
+
+/* line 74, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mtn, .mvn, .man {
+  margin-top: 0px;
+}
+
+/* line 77, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mts, .mvs, .mas {
+  margin-top: 5px;
+}
+
+/* line 80, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mtm, .mvm, .mam {
+  margin-top: 10px;
+}
+
+/* line 83, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mtl, .mvl, .mal {
+  margin-top: 20px;
+}
+
+/* line 86, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mrn, .mhn, .man {
+  margin-right: 0px;
+}
+
+/* line 89, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mrs, .mhs, .mas {
+  margin-right: 5px;
+}
+
+/* line 92, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mrm, .mhm, .mam {
+  margin-right: 10px;
+}
+
+/* line 95, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mrl, .mhl, .mal {
+  margin-right: 20px;
+}
+
+/* line 98, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mbn, .mvn, .man {
+  margin-bottom: 0px;
+}
+
+/* line 101, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mbs, .mvs, .mas {
+  margin-bottom: 5px;
+}
+
+/* line 104, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mbm, .mvm, .mam {
+  margin-bottom: 10px;
+}
+
+/* line 107, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mbl, .mvl, .mal {
+  margin-bottom: 20px;
+}
+
+/* line 110, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mln, .mhn, .man {
+  margin-left: 0px;
+}
+
+/* line 113, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mls, .mhs, .mas {
+  margin-left: 5px;
+}
+
+/* line 116, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mlm, .mhm, .mam {
+  margin-left: 10px;
+}
+
+/* line 119, ../../../../../app/stylesheets/oosass/core/spacing/space.sass */
+.mll, .mhl, .mal {
+  margin-left: 20px;
+}

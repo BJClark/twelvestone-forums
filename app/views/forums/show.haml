@@ -1,14 +1,11 @@
-= render :partial => "/layouts/side_navigation", :locals => { :profile => current_user }
-
 #wide_center_column
   %h2.forum-title
-    = link_to "Forums Home &raquo;", community_forums_path
+    = link_to "Forums Home", forums_path
     = @forum.name
   - if @forum.allowed? current_user
-    = link_to "Start a new conversation", new_community_conversation_path(:forum_id => @forum.id), :id => "new_conversation"
+    = link_to "Start a new conversation", new_conversation_path(:forum_id => @forum.id), :id => "new_conversation"
 
-
-    %table.lined.conversations
+    %table.conversations
       %thead
         %tr
           %th
@@ -19,8 +16,8 @@
             Last Post by
 
       %tbody
-        = render :partial => "community/conversations/row", :collection => @sticky
-        = render :partial => "community/conversations/row", :collection => @conversations
+        = render :partial => "conversations/row", :collection => @sticky
+        = render :partial => "conversations/row", :collection => @conversations
 
     = will_paginate @conversations
   - else
@@ -31,4 +28,4 @@
       - else
         to premium members.
         
-      = link_to "Please check out the other forums.", community_forums_path
+      = link_to "Please check out the other forums.", forums_path

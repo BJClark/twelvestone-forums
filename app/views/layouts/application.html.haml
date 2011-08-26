@@ -1,0 +1,20 @@
+!!! html
+%html
+  %head
+    = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'print.css', :media => 'print'
+    /[if IE]
+      = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+  %body
+    .body
+      .page
+        = yield
+        
+    %script{ :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" }
+    :javascript
+      !window.jQuery && document.write('<script src="/javascripts/jquery-1.6.1.min.js"><\/script>');
+      
+    = javascript_include_tag "underscore.min",
+                             "backbone",
+                             "monkeypatches"
+      

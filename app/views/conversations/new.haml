@@ -1,14 +1,14 @@
-= render :partial => "/layouts/side_navigation", :locals => { :profile => @profile }
-
-#wide_center_column
-  %h2.forum-title
-    = link_to "#{@conversation.forum.name} &raquo;", community_forum_path(@conversation.forum)
-    Starting a new conversation
+.line
+  .mod
+    %h2.forum-title
+      = link_to @conversation.forum.name, forum_path(@conversation.forum)
+      Starting a new conversation
     
-  #new_conversation.column.two-thirds
+  #new_conversation
     - errors = !@conversation.errors.empty? ? @conversation.errors : @post.errors
     - if not errors.empty?
-      = render :partial => "shared/error_box", :locals => { :errors => errors }
+      =# render :partial => "shared/error_box", :locals => { :errors => errors }
+      = errors.inspect
       
     - form_for @conversation, :method => "post", :html => { :id => "new_conversation_form" } do |f|
       = f.hidden_field :forum_id
@@ -24,9 +24,9 @@
           = f.label :title, "Conversation Title"
           = f.text_field :title, :maxlength => 250, :size => 45
       .labelled-input
-        %label{:for => "community_post_text"}
+        %label{:for => "post_text"}
           
-        %textarea{:name => "community_post[text]" }
+        %textarea{:name => "post[text]" }
           = @conversation.posts.first.try(:text)
             
         = f.submit "Create Conversation", :class => "submit"

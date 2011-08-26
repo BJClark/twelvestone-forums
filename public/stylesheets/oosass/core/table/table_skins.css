@@ -1,0 +1,42 @@
+/* simple table @extends data table */
+/* line 3, ../../../../../app/stylesheets/oosass/core/table/table_skins.sass */
+.simpleTable {
+  padding: 20px;
+  /* doesn't this break stuff??? ok for win & mac on Safari, FF, chrome, opera. OK on IE6/7/8. */
+}
+/* line 6, ../../../../../app/stylesheets/oosass/core/table/table_skins.sass */
+.simpleTable table, .simpleTable th, .simpleTable td {
+  border: 1px solid #ae0345;
+}
+/* line 8, ../../../../../app/stylesheets/oosass/core/table/table_skins.sass */
+.simpleTable thead tr {
+  background-color: #fff0f8;
+}
+/* line 10, ../../../../../app/stylesheets/oosass/core/table/table_skins.sass */
+.simpleTable th {
+  color: black;
+  font-weight: bold;
+}
+
+/* specification table @extends data table */
+/* line 16, ../../../../../app/stylesheets/oosass/core/table/table_skins.sass */
+.spec {
+  padding: 10px;
+}
+/* line 18, ../../../../../app/stylesheets/oosass/core/table/table_skins.sass */
+.spec table {
+  border-top: 1px solid #e2e2e2;
+  border-bottom-color: white;
+  border-left: none;
+  border-right: none;
+}
+/* line 23, ../../../../../app/stylesheets/oosass/core/table/table_skins.sass */
+.spec th, .spec td {
+  border: 1px solid #e2e2e2;
+  border-width: 1px 0;
+  padding-left: 0;
+}
+/* line 27, ../../../../../app/stylesheets/oosass/core/table/table_skins.sass */
+.spec .odd, .spec .even {
+  background-color: white;
+}

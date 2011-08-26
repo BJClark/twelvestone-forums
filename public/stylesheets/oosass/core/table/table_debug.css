@@ -1,0 +1,21 @@
+/* table debug */
+/* line 3, ../../../../../app/stylesheets/oosass/core/table/table_debug.sass */
+.data {
+  background-color: #ff3300;
+}
+/* line 5, ../../../../../app/stylesheets/oosass/core/table/table_debug.sass */
+.data table {
+  background-color: #ff6600;
+}
+/* line 7, ../../../../../app/stylesheets/oosass/core/table/table_debug.sass */
+.data tr {
+  background-color: #ff9900;
+}
+/* line 9, ../../../../../app/stylesheets/oosass/core/table/table_debug.sass */
+.data th {
+  background-color: #ffcc00;
+}
+/* line 11, ../../../../../app/stylesheets/oosass/core/table/table_debug.sass */
+.data td {
+  background-color: yellow;
+}

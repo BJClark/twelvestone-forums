@@ -1,0 +1,38 @@
+/* debug modules */
+/* line 3, ../../../../../app/stylesheets/oosass/core/module/mod_debug.sass */
+.top, .bottom {
+  background-color: #e2e2e2;
+}
+
+/* line 6, ../../../../../app/stylesheets/oosass/core/module/mod_debug.sass */
+.tl {
+  background-color: red;
+}
+
+/* line 9, ../../../../../app/stylesheets/oosass/core/module/mod_debug.sass */
+.tr {
+  background-color: orange;
+}
+
+/* line 12, ../../../../../app/stylesheets/oosass/core/module/mod_debug.sass */
+.bl {
+  background-color: yellow;
+}
+
+/* line 15, ../../../../../app/stylesheets/oosass/core/module/mod_debug.sass */
+.br {
+  background-color: lime;
+}
+
+/*.hd{background-color: green;}
+ *.bd{background-color: teal;}
+ *.ft{background-color: blue;} */
+/* line 22, ../../../../../app/stylesheets/oosass/core/module/mod_debug.sass */
+.mod {
+  background-color: purple;
+}
+
+/* line 25, ../../../../../app/stylesheets/oosass/core/module/mod_debug.sass */
+.inner {
+  background-color: #e20074;
+}

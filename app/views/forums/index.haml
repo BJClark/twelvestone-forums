@@ -1,7 +1,5 @@
-= render :partial => "/layouts/side_navigation", :locals => { :profile => current_user }
-
 .column.wide-content
-  %h2 Hey Foxy Forums
+  %h2 #{current_community.name} Forums
   
   
   %table.lined
@@ -14,7 +12,7 @@
         %th
           Last Post
     %tbody
-      = render :partial => "/community/forums/row", :collection => @forums
+      = render :partial => "forums/row", :collection => @forums
           
         
         

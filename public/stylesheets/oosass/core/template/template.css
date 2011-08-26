@@ -1,0 +1,93 @@
+/* **************** TEMPLATE ***************** */
+/* ====== Page Head, Body, and Foot ====== */
+/* line 4, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+body {
+  _text-align: center;
+}
+
+/* IE5.5 */
+/* line 9, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.main {
+  display: table-cell;
+  *display: block;
+  width: auto;
+}
+
+/* line 14, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.body, .main {
+  *zoom: 1;
+}
+
+/* line 17, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.body:after, .main:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+/* line 27, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.page {
+  margin: 0 auto;
+  width: 950px;
+  _text-align: left;
+}
+
+/* wraps other template elems to set width */
+/* text-align IE5.5 */
+/* "old school" and "liquid" extend page to allow for different page widths */
+/* line 37, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.oldSchool {
+  width: 750px;
+}
+
+/* line 40, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.gs960 {
+  width: 960px;
+}
+
+/* line 43, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.liquid {
+  width: auto;
+  margin: 0;
+}
+
+/* ====== Columns ====== */
+/* line 49, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.leftCol {
+  float: left;
+  width: 250px;
+  _margin-right: -3px;
+}
+
+/* line 54, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.rightCol {
+  float: right;
+  width: 300px;
+  _margin-left: -3px;
+}
+
+/* extend columns to allow for common column widths */
+/* line 61, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.gMail {
+  width: 160px;
+}
+
+/* line 64, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.gCal {
+  width: 180px;
+}
+
+/* line 67, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.yahoo {
+  width: 240px;
+}
+
+/* line 70, ../../../../../app/stylesheets/oosass/core/template/template.sass */
+.myYahoo {
+  width: 300px;
+}

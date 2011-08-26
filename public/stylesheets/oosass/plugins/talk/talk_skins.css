@@ -1,0 +1,69 @@
+/* yowza (extends bubbleTop) */
+/* line 4, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.yowza .inner {
+  background-color: #d4494f;
+}
+/* line 6, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.yowza b b {
+  border-bottom-color: #d4494f;
+}
+
+/* discuss (extends bubbleBottom) */
+/* line 12, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.discuss .inner {
+  background-color: #cccccc;
+}
+/* line 14, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.discuss b b {
+  border-top-color: #cccccc;
+}
+
+/* lol (extends bubbleLeft) */
+/* line 20, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.lol .inner {
+  background-color: #845b4e;
+  color: white;
+}
+/* line 23, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.lol b b {
+  border-right-color: #845b4e;
+}
+
+/* meep (extends bubbleRight) */
+/* line 29, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.meep .inner {
+  background-color: #6cc6c6;
+}
+/* line 31, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.meep b b {
+  border-left-color: #6cc6c6;
+}
+
+/* yoyo (extends bubbleBottom) */
+/* line 37, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.yoyo .inner {
+  background-color: #52a583;
+}
+/* line 39, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.yoyo b b {
+  border-top-color: #52a583;
+}
+
+/* header */
+/* line 44, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.fire {
+  color: black;
+  font-size: 18px;
+  border-bottom: 1px dashed white;
+}
+/* line 48, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.fire * {
+  color: black;
+  font-size: 18px;
+  border-bottom: 1px dashed white;
+}
+
+/* line 53, ../../../../../app/stylesheets/oosass/plugins/talk/talk_skins.sass */
+.attribution {
+  margin-left: 27px;
+}

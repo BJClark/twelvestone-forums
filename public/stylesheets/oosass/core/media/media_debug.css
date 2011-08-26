@@ -1,0 +1,16 @@
+/* line 1, ../../../../../app/stylesheets/oosass/core/media/media_debug.sass */
+.media {
+  background-color: rgba(195, 0, 38, 0.3);
+}
+/* line 2, ../../../../../app/stylesheets/oosass/core/media/media_debug.sass */
+.media .img {
+  background-color: rgba(195, 0, 38, 0.3);
+}
+/* line 3, ../../../../../app/stylesheets/oosass/core/media/media_debug.sass */
+.media .img img {
+  background-color: rgba(195, 0, 38, 0.3);
+}
+/* line 6, ../../../../../app/stylesheets/oosass/core/media/media_debug.sass */
+.media .imgExt, .media .bd {
+  background-color: rgba(195, 0, 38, 0.3);
+}

@@ -1,0 +1,162 @@
+/*Copyright (c) 2009, Nicole Sullivan. All rights reserved.
+ *Code licensed under the BSD License:
+ *version: 0.2 */
+/* **************** BLOCK STRUCTURES ***************** */
+/* mod */
+/* line 8, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.mod {
+  margin: 10px;
+}
+/* line 10, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.mod .inner {
+  /*background: url(skin/transparent.png) repeat left top; */
+}
+
+/* line 13, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.bd, .ft, .hd {
+  display: inline-block;
+  width: 100%;
+  *display: block;
+  *width: auto;
+  zoom: 1;
+}
+
+/* line 20, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.inner:after, .hd:after, .bd:after, .ft:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+/* line 30, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.inner {
+  position: relative;
+}
+
+/* line 33, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+b {
+  display: block;
+  background-repeat: no-repeat;
+  font-size: 1%;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 40, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.tl, .tr, .bl, .br {
+  height: 10px;
+  width: 10px;
+  float: left;
+}
+
+/* line 45, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.tl {
+  background-position: left top;
+}
+
+/* line 48, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.tr {
+  background-position: right top;
+}
+
+/* line 51, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.bl {
+  background-position: left bottom;
+}
+
+/* line 54, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.br {
+  background-position: right bottom;
+  float: right;
+}
+
+/* line 58, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.tr {
+  float: right;
+  overflow: hidden;
+  margin-bottom: -32000px;
+}
+
+/* line 63, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.tl {
+  overflow: hidden;
+  margin-bottom: -32000px;
+}
+
+/* margin bottom needs to be < -9px */
+/* line 69, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.bl, .br {
+  margin-top: -10px;
+}
+
+/* line 72, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.top {
+  background-position: center top;
+}
+
+/* line 75, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.bottom {
+  background-position: center bottom;
+  _zoom: 1;
+}
+
+/* this zoom required for IE5.5 only */
+/* complex */
+/* line 82, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.complex {
+  overflow: hidden;
+  *position: relative;
+  *zoom: 1;
+}
+/* line 86, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.complex .tl, .complex .tr {
+  height: 32000px;
+  margin-bottom: -32000px;
+  width: 10px;
+}
+/* line 90, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.complex .bl, .complex .br {
+  /*margin-top:0; */
+}
+/* line 92, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.complex .top {
+  height: 5px;
+}
+/* line 94, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.complex .bottom {
+  height: 5px;
+  /*margin-top:-10px; */
+}
+
+/* position/zoom required for IE7, 6, 5.5 */
+/* pop */
+/* line 102, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.pop {
+  overflow: visible;
+  margin: 10px 20px 20px 10px;
+  background-position: left top;
+}
+/* line 106, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.pop .inner {
+  right: -10px;
+  bottom: -10px;
+  background-position: right bottom;
+  padding: 0 10px 10px 0;
+}
+/* line 111, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.pop .tl, .pop .br {
+  display: none;
+}
+/* line 113, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.pop .bl {
+  bottom: -10px;
+}
+/* line 115, ../../../../../app/stylesheets/oosass/core/module/mod.sass */
+.pop .tr {
+  right: -10px;
+}

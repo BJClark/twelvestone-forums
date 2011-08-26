@@ -1,5 +1,7 @@
 class ConversationsController < ApplicationController
-  before_filter :authenticate, :except => [ :show ]
+  include ForumsHelper
+
+  before_filter :authenticate_user!, :except => [ :show ]
   before_filter :require_admin, :only => [ :update, :edit ]
   before_filter :find_conversation, :only => [ :show, :edit, :update, :unsubscribe ]
   before_filter :check_forum_restriction, :only => [ :show, :create ]
@@ -28,7 +30,7 @@ class ConversationsController < ApplicationController
   end
   
   def edit
-    render :partial => "community/conversations/edit"
+    render :partial => "conversations/edit"
   end
   
   def update
@@ -37,7 +39,7 @@ class ConversationsController < ApplicationController
     @conversation.sticky = params[:conversation][:sticky] == "1"
     
     if @conversation.save
-      render :partial => "community/conversations/row", :locals => { :row => @conversation }, :status => :ok
+      render :partial => "conversations/row", :locals => { :row => @conversation }, :status => :ok
     else
       render :json => @conversation.errors.to_json, :status => :unprocessable_entity
     end

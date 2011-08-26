@@ -1,23 +1,22 @@
 class Forum
   include MongoMapper::Document
-  include Extensions::Models::Slug
+  include MongoMapper::Sluggable
   
   key :name, :required => true, :unique => true
-
+  
   key :description, :required => true
   key :ordinal, Integer, :required => true, :unique => true
-  key :last_conversation, EmbeddedConversation
+  key :last_conversation, Conversation.embedded_class
   key :post_count, Integer, :default => 0
   key :conversation_count, Integer, :default => 0
   key :restricted, String, :default => nil
 
   many :conversations, :class => Conversation, :foreign_key => :forum_id
-  
+  belongs_to :community
+
   scope :in_order, :order => [ :ordinal, :ascending ]
   
-  def self.blog_forum
-    find_by_slug 'foxy-blog'
-  end
+  slugged_attr :name
   
   def was_posted_in(conversation)
     self.post_count         += 1
@@ -29,14 +28,14 @@ class Forum
     !restricted.nil?
   end
   
-  def allowed?(profile)
-    return false if profile.nil? && restricted?
+  def allowed?(user)
+    return false if user.nil? && restricted?
     
     case restricted
     when "premium"
-      profile.privilege_level.name == "standard member" || profile.privilege_level.name == "premium member" || profile.admin?
+      user.premium?
     when "staff"
-      profile.admin?
+      user.admin?
     else
       true
     end

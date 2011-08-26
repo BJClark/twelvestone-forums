@@ -1,0 +1,25 @@
+/* **************** TEMPLATE DEBUG ***************** */
+/* line 3, ../../../../../app/stylesheets/oosass/core/template/template_debug.sass */
+.body {
+  background-color: red;
+}
+
+/* line 6, ../../../../../app/stylesheets/oosass/core/template/template_debug.sass */
+.page {
+  background-color: orange;
+}
+
+/* line 9, ../../../../../app/stylesheets/oosass/core/template/template_debug.sass */
+.main {
+  background-color: yellow;
+}
+
+/* line 12, ../../../../../app/stylesheets/oosass/core/template/template_debug.sass */
+.leftCol {
+  background-color: lime;
+}
+
+/* line 15, ../../../../../app/stylesheets/oosass/core/template/template_debug.sass */
+.rightCol {
+  background-color: aqua;
+}

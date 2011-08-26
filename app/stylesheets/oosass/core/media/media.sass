@@ -1,0 +1,41 @@
+/* ====== media (requires mod.css) ======
+
+.media
+  margin: 10px
+  &:after
+    clear: both
+    display: block
+    visibility: hidden
+    overflow: hidden
+    height: 0 !important
+    line-height: 0
+    font-size: xx-large
+    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x "
+
+.bd:after
+  clear: both
+  display: block
+  visibility: hidden
+  overflow: hidden
+  height: 0 !important
+  line-height: 0
+  font-size: xx-large
+  content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x "
+
+.media
+  .bd
+    display: table-cell
+    zoom: 1
+    >
+      \:first-child
+        margin-top: 0
+      \:last-child
+        margin-bottom: 0
+  .img
+    float: left
+    /*margin-right: 10px;
+    img
+      display: block
+  .imgExt
+    float: right
+    /*margin-left: 10px;

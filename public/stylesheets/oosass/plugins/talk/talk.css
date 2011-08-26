@@ -1,0 +1,89 @@
+/* **************** TALK BUBBLE ***************** */
+/* line 3, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubble {
+  overflow: hidden;
+  _overflow: visible;
+  _zoom: 1;
+  margin: 10px;
+}
+/* line 8, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubble b b {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: solid 7px transparent;
+  _border: 7px solid white;
+}
+/* line 14, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubble .bottom {
+  visibility: hidden;
+}
+
+/* top bubbles */
+/* line 20, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleTop .inner {
+  margin-top: 7px;
+}
+/* line 22, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleTop b b {
+  top: 0;
+  left: 10px;
+  border-top-style: none;
+}
+
+/* left bubbles */
+/* line 30, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleLeft .inner {
+  margin-left: 7px;
+}
+/* line 32, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleLeft b b {
+  top: 10px;
+  left: 0;
+  border-left-style: none;
+}
+
+/* right bubbles */
+/* line 40, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleRight .inner {
+  margin-right: 7px;
+}
+/* line 42, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleRight b b {
+  top: 10px;
+  right: 0;
+  border-right-style: none;
+}
+
+/* bottom bubbles */
+/* line 50, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleBottom .inner {
+  margin-bottom: 7px;
+}
+/* line 52, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleBottom b b {
+  bottom: 0;
+  left: 10px;
+  border-bottom-style: none;
+}
+/* line 56, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleBottom .bottom {
+  visibility: visible;
+}
+
+/* extensions (swaps alignment of talk bubble) */
+/* line 61, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleHorizontalExt b b {
+  top: auto;
+  bottom: 10px;
+  visibility: visible;
+}
+
+/* apply to bubbleLeft or bubbleRight */
+/* line 68, ../../../../../app/stylesheets/oosass/plugins/talk/talk.sass */
+.bubbleVerticalExt b b {
+  right: 10px;
+  left: auto;
+}
+
+/* apply to bubbleTop or bubbleBottom */

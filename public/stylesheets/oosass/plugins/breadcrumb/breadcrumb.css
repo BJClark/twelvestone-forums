@@ -1,0 +1,18 @@
+/* line 2, ../../../../../app/stylesheets/oosass/plugins/breadcrumb/breadcrumb.sass */
+.breadcrumb li {
+  display: inline;
+}
+/* line 4, ../../../../../app/stylesheets/oosass/plugins/breadcrumb/breadcrumb.sass */
+.breadcrumb li:after {
+  content: "\25B8";
+  display: inline-block;
+  padding: 0 6px 0 10px;
+}
+/* line 8, ../../../../../app/stylesheets/oosass/plugins/breadcrumb/breadcrumb.sass */
+.breadcrumb li:last-child:after {
+  content: "";
+}
+/* line 10, ../../../../../app/stylesheets/oosass/plugins/breadcrumb/breadcrumb.sass */
+.breadcrumb a {
+  color: #2c4460 !important;
+}

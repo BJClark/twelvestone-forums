@@ -6,9 +6,7 @@
   %td
     - if row.try(:last_conversation)
       Last post by 
-      - author = row.last_conversation.last_post.author
-      = link_to truncate(author.name), profile_path(author.slug), 
-           :title => "#{author.gender}/#{author.location.name},#{author.location.state}"
+      = row.last_conversation.last_post.author.name
       in 
-      = link_to truncate(row.last_conversation.title), community_conversation_path(row.last_conversation.slug)
+      = link_to truncate(row.last_conversation.title), conversation_path(row.last_conversation.slug)
       

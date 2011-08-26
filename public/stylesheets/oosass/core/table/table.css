@@ -1,0 +1,120 @@
+/*
+ * Data Table 
+ * Allows you to align various table cells so that the alignment class can be placed on either the table, table row, or table cell 
+ * Cell takes precedence over table row and table
+ * Table row takes precedence over table */
+/* line 7, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.data {
+  position: relative;
+  zoom: 1;
+  vertical-align: top;
+  text-align: left;
+  /*border-right:solid 1px transparent; */
+  /* border fixes a FF2 bug which causes the data table to overlay its borders */
+}
+/* line 14, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.data table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* line 18, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+th, td {
+  /*vertical-align:top; */
+}
+
+/* horizontal alignment */
+/* line 23, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.txtC {
+  text-align: center;
+}
+
+/* line 27, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+table .txtC td, table .txtC th {
+  text-align: center;
+}
+
+/* line 31, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.data .txtC th, .data .txtC td {
+  text-align: center;
+}
+
+/* line 34, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.txtL {
+  text-align: left;
+}
+
+/* line 38, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+table .txtL td, table .txtL th {
+  text-align: left;
+}
+
+/* line 42, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.data .txtL th, .data .txtL td {
+  text-align: left;
+}
+
+/* line 45, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.txtR {
+  text-align: right;
+}
+
+/* line 49, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+table .txtR td, table .txtR th {
+  text-align: right;
+}
+
+/* line 53, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.data .txtR th, .data .txtR td {
+  text-align: right;
+}
+
+/* vertical alignment */
+/* line 58, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.txtT {
+  vertical-align: top;
+}
+
+/* line 62, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+table .txtT td, table .txtT th {
+  vertical-align: top;
+}
+
+/* line 66, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.data .txtT th, .data .txtT td {
+  vertical-align: top;
+}
+
+/* line 69, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.txtB {
+  vertical-align: bottom;
+}
+
+/* line 73, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+table .txtB td, table .txtB th {
+  vertical-align: bottom;
+}
+
+/* line 77, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.data .txtB th, .data .txtB td {
+  vertical-align: bottom;
+}
+
+/* line 80, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.txtM {
+  vertical-align: middle;
+}
+
+/* line 84, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+table .txtM td, table .txtM th {
+  vertical-align: middle;
+}
+
+/* line 89, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.data .txtM th, .data .txtM td {
+  vertical-align: middle;
+}
+/* line 91, ../../../../../app/stylesheets/oosass/core/table/table.sass */
+.data th, .data td {
+  padding: 3px 20px;
+}

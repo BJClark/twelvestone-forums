@@ -1,0 +1,56 @@
+/* ====== media (requires mod.css) ====== */
+/* line 3, ../../../../../app/stylesheets/oosass/core/media/media.sass */
+.media {
+  margin: 10px;
+}
+/* line 5, ../../../../../app/stylesheets/oosass/core/media/media.sass */
+.media:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+/* line 15, ../../../../../app/stylesheets/oosass/core/media/media.sass */
+.bd:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+/* line 26, ../../../../../app/stylesheets/oosass/core/media/media.sass */
+.media .bd {
+  display: table-cell;
+  zoom: 1;
+}
+/* line 30, ../../../../../app/stylesheets/oosass/core/media/media.sass */
+.media .bd > :first-child {
+  margin-top: 0;
+}
+/* line 32, ../../../../../app/stylesheets/oosass/core/media/media.sass */
+.media .bd > :last-child {
+  margin-bottom: 0;
+}
+/* line 34, ../../../../../app/stylesheets/oosass/core/media/media.sass */
+.media .img {
+  float: left;
+  /*margin-right: 10px; */
+}
+/* line 37, ../../../../../app/stylesheets/oosass/core/media/media.sass */
+.media .img img {
+  display: block;
+}
+/* line 39, ../../../../../app/stylesheets/oosass/core/media/media.sass */
+.media .imgExt {
+  float: right;
+  /*margin-left: 10px; */
+}

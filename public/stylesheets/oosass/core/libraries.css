@@ -1,0 +1,87 @@
+/*Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+ *Code licensed under the BSD License:
+ *http://developer.yahoo.net/yui/license.txt
+ *version: 3.0.0pr2 */
+/* reset */
+/* line 8, ../../../../app/stylesheets/oosass/core/libraries.sass */
+html {
+  color: black;
+  background: white;
+}
+
+/* line 12, ../../../../app/stylesheets/oosass/core/libraries.sass */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, ../../../../app/stylesheets/oosass/core/libraries.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 20, ../../../../app/stylesheets/oosass/core/libraries.sass */
+fieldset, img {
+  border: 0;
+}
+
+/* line 23, ../../../../app/stylesheets/oosass/core/libraries.sass */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 27, ../../../../app/stylesheets/oosass/core/libraries.sass */
+li {
+  list-style: none;
+}
+
+/* line 30, ../../../../app/stylesheets/oosass/core/libraries.sass */
+caption, th {
+  text-align: left;
+}
+
+/* line 33, ../../../../app/stylesheets/oosass/core/libraries.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 38, ../../../../app/stylesheets/oosass/core/libraries.sass */
+q:before, q:after {
+  content: "";
+}
+
+/* line 41, ../../../../app/stylesheets/oosass/core/libraries.sass */
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* line 45, ../../../../app/stylesheets/oosass/core/libraries.sass */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 48, ../../../../app/stylesheets/oosass/core/libraries.sass */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 51, ../../../../app/stylesheets/oosass/core/libraries.sass */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* line 56, ../../../../app/stylesheets/oosass/core/libraries.sass */
+input, textarea, select {
+  *font-size: 100%;
+}
+
+/* line 59, ../../../../app/stylesheets/oosass/core/libraries.sass */
+legend {
+  color: black;
+}

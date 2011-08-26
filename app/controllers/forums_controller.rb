@@ -1,10 +1,11 @@
 class ForumsController < ApplicationController
+  include ApplicationHelper
   # before_filter :authenticate
   
   def index
-    @page_title       = "Hey Foxy Forums"
-    @page_description = "The community area of Hey Foxy, for asking questions, giving answers, getting help, and socializing."
-    @forums           = Forum.in_order.paginate :page => params[:page]
+    @page_title       = current_community.name
+    @page_description = current_community.introduction
+    @forums           = current_community.forums.in_order.paginate :page => params[:page]
   end
   
   def show

@@ -1,0 +1,134 @@
+/* line 1, ../../../../app/stylesheets/oosass/core/content.sass */
+body {
+  font-family: "Myriad Pro", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* **************** CONTENT OBJECTS ***************** */
+/* ====== Elements ====== */
+/* line 8, ../../../../app/stylesheets/oosass/core/content.sass */
+img {
+  display: block;
+}
+
+/* line 11, ../../../../app/stylesheets/oosass/core/content.sass */
+em {
+  font-style: italic;
+}
+
+/* line 14, ../../../../app/stylesheets/oosass/core/content.sass */
+strong {
+  font-weight: bold;
+}
+
+/* line 17, ../../../../app/stylesheets/oosass/core/content.sass */
+hr {
+  border: 5px solid #e2e2e2;
+  border-width: 0 0 5px 0;
+  margin: 20px 10px 10px 10px;
+}
+
+/* line 22, ../../../../app/stylesheets/oosass/core/content.sass */
+code {
+  color: #0b8c8f;
+}
+
+/* line 25, ../../../../app/stylesheets/oosass/core/content.sass */
+.important a {
+  font-weight: bold;
+}
+
+/* what is this? */
+/* links */
+/* line 31, ../../../../app/stylesheets/oosass/core/content.sass */
+a {
+  color: #2c4460;
+  text-decoration: none;
+}
+/* line 34, ../../../../app/stylesheets/oosass/core/content.sass */
+a:focus, a:hover {
+  text-decoration: underline;
+}
+/* line 36, ../../../../app/stylesheets/oosass/core/content.sass */
+a:focus {
+  background-color: #ffffcc;
+}
+/* line 38, ../../../../app/stylesheets/oosass/core/content.sass */
+a:visited {
+  color: #005a9c;
+}
+
+/* ====== Lists ====== */
+/* numbered list */
+/* line 44, ../../../../app/stylesheets/oosass/core/content.sass */
+ol.simpleList li {
+  list-style-type: decimal;
+  margin-left: 40px;
+}
+
+/* standard list */
+/* line 50, ../../../../app/stylesheets/oosass/core/content.sass */
+ul.simpleList li {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+
+/* ====== blockquote ====== */
+/* line 56, ../../../../app/stylesheets/oosass/core/content.sass */
+cite {
+  display: block;
+  text-align: right;
+  padding-top: 10px;
+}
+
+/* ====== callout ====== */
+/* line 63, ../../../../app/stylesheets/oosass/core/content.sass */
+.callout {
+  font-size: 189%;
+  color: #999999;
+  font-style: italic;
+}
+/* line 67, ../../../../app/stylesheets/oosass/core/content.sass */
+.callout cite {
+  display: block;
+  text-align: right;
+  padding-top: 30px;
+  font-size: 69.25%;
+}
+/* line 73, ../../../../app/stylesheets/oosass/core/content.sass */
+.callout span.quot {
+  font-size: 500%;
+  vertical-align: sub;
+  color: #e2e2e2;
+  line-height: 25px;
+  font-weight: bold;
+}
+/* line 79, ../../../../app/stylesheets/oosass/core/content.sass */
+.callout span.quotLast {
+  vertical-align: middle;
+}
+
+/* ====== image treatments (get more from jason santa maria) ====== */
+/* line 84, ../../../../app/stylesheets/oosass/core/content.sass */
+.caption {
+  font-size: 13px;
+  color: #666666;
+  font-style: italic;
+  padding-top: 0;
+}
+
+/* will need to either
+ *1. find a way to capture the width of the caption in the width of the image or flash
+ *2. Set some default widths, mby use flickr widths? */
+/* ====== special formatting classes ====== */
+/* line 95, ../../../../app/stylesheets/oosass/core/content.sass */
+.detail {
+  color: #777777;
+  font-size: 11px;
+  display: block;
+}
+
+/* ====== images ====== */
+/* line 102, ../../../../app/stylesheets/oosass/core/content.sass */
+.icon {
+  margin-right: 5px;
+}

@@ -1,11 +1,11 @@
 class Post
   include MongoMapper::Document
-  include Extensions::Models::MarkdownFormatted
+  include MongoMapper::EmbeddableDocument
   
   timestamps!
   
   key :text, :required => true, :length => 5000
-  key :author, EmbeddedProfile, :required => true
+  key :author, User::Embedded, :required => true
   key :deleted, Boolean, :default => false, :protected => true
   key :nsfw, Boolean, :default => false
   key :edited_at, Time, :default => nil
@@ -18,6 +18,8 @@ class Post
   validate :conversation_is_not_closed
   
   scope :by_date, :order => [ [ :created_at, :ascending ] ]
+  
+  embedded_attributes :author, :deleted, :nsfw, :summary
   
   def self.edit_threshold
     1.day.ago
@@ -36,16 +38,12 @@ class Post
         :limit           => limit # safety valve
   end
   
-  def as_embedded
-    EmbeddedPost.new :author => author, :deleted => deleted, :nsfw => nsfw, :original_id => id, :summary => summary
-  end
-  
   def quoted_text
     @quoted_text ||= "> _**Originally posted by #{author.name}**_\n>\n" + text.gsub(/^(.*)$/, "> \\1").strip + "\n\n"
   end
   
-  def editable?(profile)
-    !profile.nil? && (profile.admin? || (created_at > self.class.edit_threshold && profile.id == author.original_id))
+  def editable?(user)
+    !user.nil? && (user.admin? || (created_at > self.class.edit_threshold && user.id == author.original_id))
   end
   
   def summary(options = { })
@@ -58,19 +56,25 @@ class Post
     text
   end
   
+  def rendered_text
+    @rendered_text ||= RDiscount.new((text || ""), :safelink, :filter_html, :no_pseudo_protocols)
+    @rendered_text.to_html
+  end
+  
+  
   protected
   def notify_conversation
     self.conversation.was_posted_in self
   end
   
   def conversation_is_not_closed
-    if not conversation.open?
+    if conversation && !conversation.open?
       errors.add(:conversation, "is closed.")
     end
   end
   
   def increment_post_count
-    ::Profile.increment author.original_id, :post_count => 1
+    User.increment author.original_id, :post_count => 1
   end
   
 end

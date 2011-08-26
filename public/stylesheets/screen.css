@@ -1,0 +1,25 @@
+@import url("oosass/all.css");
+/* line 3, ../../app/stylesheets/screen.scss */
+textarea {
+  width: 100%;
+}
+
+/* line 7, ../../app/stylesheets/screen.scss */
+.hidden {
+  display: none;
+}
+
+/* line 11, ../../app/stylesheets/screen.scss */
+.alert {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+}
+
+/* line 18, ../../app/stylesheets/screen.scss */
+.vertical {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+}

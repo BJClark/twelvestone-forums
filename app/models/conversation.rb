@@ -1,6 +1,8 @@
 class Conversation
   include MongoMapper::Document
-  include Extensions::Models::Slug
+  include MongoMapper::Sluggable
+  include MongoMapper::EmbeddableDocument
+  
   timestamps!
   
   allow_non_unique_slug
@@ -11,8 +13,8 @@ class Conversation
   key :sticky, Boolean, :default => false
   key :last_posted_in, :default => lambda{ Time.now.utc }
   
-  key :last_post, EmbeddedPost
-  key :first_post, EmbeddedPost
+  key :last_post, Post::Embedded
+  key :first_post, Post::Embedded
   
   key :subscribers, Array, :default => []
   key :overflowed, Boolean, :default => false
@@ -28,23 +30,14 @@ class Conversation
   scope :by_date, :order => [ [ :last_posted_in, :descending ] ]
   scope :sticky,  :sticky => true
   
-  # for compatibility with the slug extension
-  alias_method :name, :title
+  slugged_attr :title
+  
+  embedded_attributes :title, :slug, :post_count, :open, :sticky, :last_post
+  
   
   def self.subscriber_overflow_limit
-      50
-  end
-  
-  def as_embedded
-    EmbeddedConversation.new :title       => title,
-                                        :slug        => slug,
-                                        :post_count  => post_count,
-                                        :open        => open,
-                                        :sticky      => sticky,
-                                        :last_post   => last_post, 
-                                        :original_id => id
-   
-  end
+    50
+  end  
   
   def total_pages_from_post_count
     (post_count.to_f / Post.per_page.to_f).ceil
@@ -66,10 +59,10 @@ class Conversation
   end
   
   def subscribers
-    if not overflowed?
-      @subscribers
-    else
+    if overflowed?
       subscriber_overflow.subscribers
+    else
+      read_key :subscribers
     end
   end
   
@@ -77,7 +70,7 @@ class Conversation
     self.post_count    += 1
     self.last_post      = post.as_embedded
     self.last_posted_in = Time.now.utc
-    
+
     if self.first_post.nil?
       self.first_post = post.as_embedded
     end
@@ -87,23 +80,25 @@ class Conversation
     save(:validate => false)
   end
   
-  def add_subscriber(profile)
-    subscriber_id = profile.respond_to?(:original_id) ? profile.original_id : profile.id
+  def add_subscriber(user)
+    subscriber_id = user.respond_to?(:original_id) ? user.original_id : user.id
     if not overflowed?
-      if subscribers.length >= self.class.subscriber_overflow_limit
-        subscriber_overflow.create! :subscribers => @subscribers.push(subscriber_id).uniq
+      subs = read_key :subscribers
+      if subs.length >= self.class.subscriber_overflow_limit
+        self.subscriber_overflow = SubscriberOverflow.create! :subscribers => subs.push(subscriber_id).uniq, :conversation_id => self.id
         self.overflowed  = true
-        @subscribers.clear
+        subs.clear
       else
-        @subscribers << subscriber_id and @subscribers.uniq!
+        subs << subscriber_id and subs.uniq!
       end
+      write_key :subscribers, subs
     else
       add_subscriber_to_overflow subscriber_id
     end
   end
   
-  def remove_subscriber(profile)
-    subscriber_id = profile.respond_to?(:original_id) ? profile.original_id : profile.id
+  def remove_subscriber(user)
+    subscriber_id = user.respond_to?(:original_id) ? user.original_id : user.id
     if overflowed?
       SubscriberOverflow.pull({ :conversation_id => id }, :subscribers => subscriber_id)
     else
@@ -118,7 +113,8 @@ class Conversation
   end
   
   def notify_subscribers(author)
-    Notification.conversation_reply(self, author, subscribers)
+    
+    # Notification.conversation_reply(self, author, subscribers)
   end
 end
 
